@@ -18,7 +18,7 @@ export default function Home() {
         </Typography>
 
         <Grid container direction="row" justify="space-evenly" alignItems="stretch" spacing={2}>
-          <Grid item container direction="column" justify="space-between" alignItems="stretch" spacing={5} xs={10} sm={5}>
+          <Grid item container direction="column" justify="space-between" spacing={5} xs={10} sm={5}>
             <Typography variant="h4" align="center">Discovery and Independence</Typography>
             <Grid item>
               <Card className={styles.card}>
