@@ -26,7 +26,7 @@ export default function Home() {
                   <CardActionArea>
                     <CardHeader title="1492-1763" />
                     <CardContent>
-                      <Typography variant="subtitle1">Discovery of the Americas by Columbus, colonization, and the Royal Proclomation of 1763</Typography>
+                      <Typography variant="subtitle1">Discovery of the Americas by Columbus, Colonization, and the Royal Proclomation of 1763</Typography>
                       <CardMedia image="/images/jamestown.jpg" className={styles.image} />
                     </CardContent>
                   </CardActionArea>
