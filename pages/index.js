@@ -10,11 +10,11 @@ export default function Home() {
     <Layout>
       <main className={styles.main}>
         <Typography variant="h2" align="center">
-          APHistory Assistant
+          AP History Assistant
         </Typography>
 
         <Typography variant="subtitle1" align="center" className={styles.description}>
-          Created by Jacob Daniel, Abhilash Raghuram, Amrith Ravikumar, and Rohan Vasavada
+          Created by Jacob Men, Abhilash Raghuram, Amrith Ravikumar, and Rohan Vasavada
         </Typography>
 
         <Grid container direction="row" justify="space-evenly" alignItems="stretch" spacing={2}>
@@ -54,7 +54,7 @@ export default function Home() {
                   <CardActionArea>
                     <CardHeader title="1789-1816" />
                     <CardContent>
-                      <Typography variant="subtitle1">The Chronicles of the US and a Final War against the British for Independence</Typography>
+                      <Typography variant="subtitle1">The Chronicles of the US and a final war against the British for Independence</Typography>
                       <CardMedia image="/images/baltimore.jpg" className={styles.image} />
                     </CardContent>
                   </CardActionArea>
@@ -71,7 +71,7 @@ export default function Home() {
                   <CardActionArea>
                     <CardHeader title="1816-1848" />
                     <CardContent>
-                      <Typography variant="subtitle1">The Story of US politics, economics, and society post-British</Typography>
+                      <Typography variant="subtitle1">US politics, economics, and society after the War of 1812</Typography>
                       <CardMedia image="/images/clay.jpg" className={styles.image} />
                     </CardContent>
                   </CardActionArea>
@@ -85,7 +85,7 @@ export default function Home() {
                   <CardActionArea>
                     <CardHeader title="1848-1860" />
                     <CardContent>
-                      <Typography variant="subtitle1">The Road to the Civil War, chronicling political tensions and societal tensions</Typography>
+                      <Typography variant="subtitle1">The Road to the Civil War, chronicling political and societal tensions</Typography>
                       <CardMedia image="/images/brown.jpg" className={styles.image} />
                     </CardContent>
                   </CardActionArea>
