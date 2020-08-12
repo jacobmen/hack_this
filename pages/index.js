@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { Card, Typography, CardActionArea, CardContent, CardHeader, CardMedia, Grid } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
 import Layout from '../components/layout'
-import styles from '../styles/main.module.css'
+import styles from '../styles/main.module.scss'
 
 export default function Home() {
   return (

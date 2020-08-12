@@ -1,5 +1,5 @@
-import { Card, Typography, CardActionArea, CardContent, CardHeader, CardMedia, AppBar, Toolbar, IconButton, Button, Grid, Paper } from '@material-ui/core'
-import styles from '../styles/main.module.css'
+import {Paper } from '@material-ui/core'
+import styles from '../styles/main.module.scss'
 
 export default function InfoPage(props) {
     return (

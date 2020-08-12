@@ -7,7 +7,7 @@ import {
 } from '@material-ui/core'
 import Layout from '../../components/layout'
 import InfoPage from '../../components/infoPage'
-import styles from '../../styles/main.module.css'
+import styles from '../../styles/main.module.scss'
 import fetch from 'node-fetch'
 
 export default function Period1(props) {

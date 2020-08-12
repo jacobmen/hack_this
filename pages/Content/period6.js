@@ -4,7 +4,7 @@ import { Card, Typography, CardActionArea, CardContent, CardHeader, CardMedia, A
     Grid, Paper, Radio, RadioGroup, FormControl, FormControlLabel,FormLabel, FormHelperText } from '@material-ui/core'
 import Layout from '../../components/layout'
 import InfoPage from '../../components/infoPage'
-import styles from '../../styles/main.module.css'
+import styles from '../../styles/main.module.scss'
 
 export default function Period6(props) {
     const [value, setValue] = React.useState('');
