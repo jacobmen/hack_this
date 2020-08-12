@@ -54,7 +54,7 @@ export default function Period3(props) {
                         <FormControlLabel value="incorrect3" control={<Radio />} label="4" />
                     </RadioGroup>
                     <FormHelperText>{helperText}</FormHelperText>
-                    <Button type="submit" variant="outlined" color="primary" className={styles.button}>
+                    <Button type="submit" variant="contained" color="primary" className={styles.button}>
                     Submit
                     </Button>
                 </FormControl>
