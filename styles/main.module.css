@@ -54,3 +54,10 @@
 .button{
   padding: 2rem;
 }
+
+.caption{
+  padding: 2rem;
+}
+.body{
+  margin-top: 3rem !important;
+}

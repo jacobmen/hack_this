@@ -11,10 +11,12 @@ export default function Layout(props) {
     return (
         <>
             <Head>
-                <title>History App</title>
+                <title>Historio</title>
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
                 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+                <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+                <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
                 <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
             </Head>
             <ThemeProvider theme={theme}>

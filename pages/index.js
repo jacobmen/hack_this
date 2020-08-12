@@ -1,3 +1,4 @@
+import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import { Card, Typography, CardActionArea, CardContent, CardHeader, CardMedia, Grid } from '@material-ui/core'
@@ -9,12 +10,12 @@ export default function Home() {
   return (
     <Layout>
       <main className={styles.main}>
-        <Typography variant="h2" align="center">
-          AP History Assistant
+        <Typography variant="h1" align="center">
+          Historio
         </Typography>
-
         <Typography variant="subtitle1" align="center" className={styles.description}>
-          Created by Jacob Men, Abhilash Raghuram, Amrith Ravikumar, and Rohan Vasavada
+          History by students for students
+          <br></br>Created by Jacob Men, Abhilash Raghuram, Amrith Ravikumar, and Rohan Vasavada
         </Typography>
 
         <Grid container direction="row" justify="space-evenly" alignItems="stretch" spacing={2}>
