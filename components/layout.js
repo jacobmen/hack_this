@@ -15,6 +15,7 @@ import Head from 'next/head'
 
 export default function Layout(props) {
     const [signedIn, setSignedIn] = React.useState(false)
+
     const router = useRouter()
 
     const theme = responsiveFontSizes(createMuiTheme({
@@ -33,9 +34,9 @@ export default function Layout(props) {
         })
     })
 
-    const handleClick = () => {
+    const handleSignInButton = () => {
         if (signedIn) {
-            auth.signOut()
+            auth.signOut().then(() => setEditing(false))
         }
 
         router.push('./login')
@@ -55,7 +56,7 @@ export default function Layout(props) {
                 <CssBaseline>
                     <AppBar position="static">
                         <Toolbar>
-                            <Button onClick={handleClick}>{signedIn ? "Sign Out" : "Sign In"}</Button>
+                            <Button onClick={handleSignInButton}>{signedIn ? "Sign Out" : "Sign In"}</Button>
                         </Toolbar>
                     </AppBar>
                     {props.children}
