@@ -1,6 +1,6 @@
 import React from 'react'
 import {auth} from "../services/firebase";
-import { Typography, Input, Button, Paper } from '@material-ui/core'
+import { Typography, TextField, Button, Paper } from '@material-ui/core'
 import styles from '../styles/main.module.scss'
 import fetch from 'node-fetch'
 
@@ -28,7 +28,7 @@ export default function PeriodPage(props) {
                 setEditing(true)
             }
         } else {
-            fetch(`http://localhost:3000/api/Content/${props.periodName}`, {
+            fetch(`${process.env.NODE_ENV === 'production' ? 'https://historio.herokuapp.com' : 'http://localhost:3000'}/api/Content/${props.periodName}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -48,9 +48,7 @@ export default function PeriodPage(props) {
     React.useEffect(() => {
         if (auth.currentUser) {
             setSignedIn(true)
-        } else {
-            setSignedIn(false)
-        }
+        } 
     })
 
     return (
@@ -67,8 +65,8 @@ export default function PeriodPage(props) {
                             <div className={styles.contentSection} key={index}>
                                 {editing &&
                                 <>
-                                    <Input value={section.title} onChange={setSectionTitleAtIndex(index)}/>
-                                    <Input value={section.body} onChange={setSectionBodyAtIndex(index)}/>
+                                    <TextField multiline fullWidth value={section.title} onChange={setSectionTitleAtIndex(index)} classes={styles.contentHeading} />
+                                    <TextField multiline fullWidth value={section.body} onChange={setSectionBodyAtIndex(index)} classes={styles.contentBody} />
                                 </>
                                 }
                                 {!editing &&

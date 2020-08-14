@@ -48,7 +48,10 @@ export default function Home() {
                 </Link>
               </Card>
             </Grid>
+          </Grid>
 
+          <Grid item container direction="column" justify="space-between" alignItems="stretch" spacing={5} xs={10} sm={10} md={5}>
+            <Typography variant="h4" align="center">The New Nation and Antebellum Era</Typography>
             <Grid item>
               <Card className={styles.card}>
                 <Link href="/Content/period3">
@@ -62,10 +65,6 @@ export default function Home() {
                 </Link>
               </Card>
             </Grid>
-          </Grid>
-
-          <Grid item container direction="column" justify="space-between" alignItems="stretch" spacing={5} xs={10} sm={10} md={5}>
-            <Typography variant="h4" align="center">The Antebellum Era and Civil War</Typography>
             <Grid item>
               <Card className={styles.card}>
                 <Link href="/Content/period4">
@@ -80,6 +79,7 @@ export default function Home() {
               </Card>
             </Grid>
 
+            {/*
             <Grid item>
               <Card className={styles.card}>
                 <Link href="/Content/period5">
@@ -107,6 +107,7 @@ export default function Home() {
                 </Link>
               </Card>
             </Grid>
+            */}
           </Grid>
         </Grid>
       </main>

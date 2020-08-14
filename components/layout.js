@@ -36,10 +36,13 @@ export default function Layout(props) {
 
     const handleSignInButton = () => {
         if (signedIn) {
-            auth.signOut().then(() => setEditing(false))
+            auth.signOut()
         }
 
-        router.push('./login')
+        router.push('/login')
+    }
+    const handleHomeButton =() => {
+        router.push('/')
     }
 
     return (
@@ -56,6 +59,7 @@ export default function Layout(props) {
                 <CssBaseline>
                     <AppBar position="static">
                         <Toolbar>
+                            <Button type="Secondary" onClick={handleHomeButton}> Historio </Button>
                             <Button onClick={handleSignInButton}>{signedIn ? "Sign Out" : "Sign In"}</Button>
                         </Toolbar>
                     </AppBar>

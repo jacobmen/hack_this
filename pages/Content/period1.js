@@ -40,12 +40,12 @@ export default function Period1({ content }) {
             >
                 <form onSubmit={handleSubmit}>
                     <FormControl component="fieldset" error={error} className={styles.formControl}>
-                        <FormLabel component="legend">which one?</FormLabel>
+                        <FormLabel component="legend">Which colony had the largest focus on religion?</FormLabel>
                         <RadioGroup aria-label="quiz" name="quiz" value={value} onChange={handleRadioChange}>
-                            <FormControlLabel value="incorrect1" control={<Radio/>} label="1"/>
-                            <FormControlLabel value="incorrect2" control={<Radio/>} label="2"/>
-                            <FormControlLabel value="correct" control={<Radio/>} label="3"/>
-                            <FormControlLabel value="incorrect3" control={<Radio/>} label="4"/>
+                            <FormControlLabel value="incorrect1" control={<Radio/>} label="Jamestown"/>
+                            <FormControlLabel value="correct" control={<Radio/>} label="Massachusetts Bay Colony"/>
+                            <FormControlLabel value="incorrect2" control={<Radio/>} label="New York"/>
+                            <FormControlLabel value="incorrect3" control={<Radio/>} label="Maryland"/>
                         </RadioGroup>
                         <FormHelperText>{helperText}</FormHelperText>
                         <Button type="submit" variant="contained" color="primary" className={styles.button}>
@@ -59,7 +59,7 @@ export default function Period1({ content }) {
 }
 
 export async function getStaticProps() {
-    const response = await fetch('http://localhost:3000/api/Content/period1')
+    const response = await fetch(`${process.env.NODE_ENV === 'production' ? 'https://historio.herokuapp.com' : 'http://localhost:3000'}/api/Content/period1`)
     const content = await response.json()
 
     return {
