@@ -22,6 +22,12 @@ export default function PeriodPage(props) {
         setSections(updatedSections)
     }
 
+    auth.onAuthStateChanged((user) => {
+        if (user === null) {
+            setEditing(false)
+        }
+    })
+
     const handleEditButton = () => {
         if (!editing) {
             if (signedIn) {
