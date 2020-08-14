@@ -7,7 +7,7 @@ import {
     Grid, Paper, Radio, RadioGroup, FormControl, FormControlLabel, FormLabel, FormHelperText
 } from '@material-ui/core'
 import Layout, {AuthContext} from '../../components/layout'
-import InfoPage from '../../components/infoPage'
+import PeriodPage from '../../components/periodPage'
 import styles from '../../styles/main.module.scss'
 import fetch from 'node-fetch'
 
@@ -87,7 +87,7 @@ export default function Period1({content}) {
 
     return (
         <Layout>
-            <InfoPage>
+            <PeriodPage>
                 <Typography variant="h3" align="left" className={styles.title}>
                     1763-1789: The Road to Revolution, Independence, and Government for the US
                 </Typography>
@@ -172,7 +172,7 @@ export default function Period1({content}) {
                     </Button>
                 </FormControl>
                 </form>
-            </InfoPage>
+            </PeriodPage>
         </Layout>
     );
 }

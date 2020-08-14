@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { Card, Typography, CardActionArea, CardContent, CardHeader, CardMedia, AppBar, Toolbar, IconButton, Button, 
     Grid, Paper, Radio, RadioGroup, FormControl, FormControlLabel,FormLabel, FormHelperText } from '@material-ui/core'
 import Layout from '../../components/layout'
-import InfoPage from '../../components/infoPage'
+import PeriodPage from '../../components/periodPage'
 import styles from '../../styles/main.module.scss'
 
 export default function Period2(props) {
@@ -33,7 +33,7 @@ export default function Period2(props) {
       };
     return (
         <Layout>
-            <InfoPage>
+            <PeriodPage>
                 <Typography variant="h3" align="left" className={styles.title}>
                     1789-1816: The Chronicles of the US and a final war against the British for Independence
                 </Typography>
@@ -111,7 +111,7 @@ export default function Period2(props) {
                     </Button>
                 </FormControl>
                 </form>
-            </InfoPage>
+            </PeriodPage>
         </Layout>
     );
 }

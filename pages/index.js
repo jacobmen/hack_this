@@ -28,7 +28,7 @@ export default function Home() {
                     <CardHeader title="1492-1763" />
                     <CardContent>
                       <Typography variant="subtitle1">Discovery of the Americas by Columbus, Colonization, and the Royal Proclomation of 1763</Typography>
-                      <CardMedia image="/images/jamestown.jpg" className={styles.image} />
+                      <CardMedia image="/images/jamestown.jpg" className={styles.card__image} />
                     </CardContent>
                   </CardActionArea>
                 </Link>
@@ -42,7 +42,7 @@ export default function Home() {
                     <CardHeader title="1763-1789" />
                     <CardContent>
                       <Typography variant="subtitle1">The Road to Revolution, Independence, and Government for the US</Typography>
-                      <CardMedia image="/images/teaparty.png" className={styles.image} />
+                      <CardMedia image="/images/teaparty.png" className={styles.card__image} />
                     </CardContent>
                   </CardActionArea>
                 </Link>
@@ -56,7 +56,7 @@ export default function Home() {
                     <CardHeader title="1789-1816" />
                     <CardContent>
                       <Typography variant="subtitle1">The Chronicles of the US and a final war against the British for Independence</Typography>
-                      <CardMedia image="/images/baltimore.jpg" className={styles.image} />
+                      <CardMedia image="/images/baltimore.jpg" className={styles.card__image} />
                     </CardContent>
                   </CardActionArea>
                 </Link>
@@ -73,7 +73,7 @@ export default function Home() {
                     <CardHeader title="1816-1848" />
                     <CardContent>
                       <Typography variant="subtitle1">US politics, economics, and society after the War of 1812</Typography>
-                      <CardMedia image="/images/clay.jpg" className={styles.image} />
+                      <CardMedia image="/images/clay.jpg" className={styles.card__image} />
                     </CardContent>
                   </CardActionArea>
                 </Link>
@@ -87,7 +87,7 @@ export default function Home() {
                     <CardHeader title="1848-1860" />
                     <CardContent>
                       <Typography variant="subtitle1">The Road to the Civil War, chronicling political and societal tensions</Typography>
-                      <CardMedia image="/images/brown.jpg" className={styles.image} />
+                      <CardMedia image="/images/brown.jpg" className={styles.card__image} />
                     </CardContent>
                   </CardActionArea>
                 </Link>
@@ -101,7 +101,7 @@ export default function Home() {
                     <CardHeader title="1860-1865" />
                     <CardContent>
                       <Typography variant="subtitle1">The Civil War</Typography>
-                      <CardMedia image="/images/lincoln.jpg" className={styles.image} />
+                      <CardMedia image="/images/lincoln.jpg" className={styles.card__image} />
                     </CardContent>
                   </CardActionArea>
                 </Link>
