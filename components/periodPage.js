@@ -34,7 +34,7 @@ export default function PeriodPage(props) {
                 setEditing(true)
             }
         } else {
-            fetch(`${process.env.NODE_ENV === 'production' ? 'https://historio.herokuapp.com' : 'http://localhost:3000'}/api/Content/${props.periodName}`, {
+            fetch(`https://historio-api.herokuapp.com/content/${props.periodName}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

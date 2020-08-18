@@ -59,7 +59,7 @@ export default function Period1({ content }) {
 }
 
 export async function getStaticProps() {
-    const response = await fetch(`${process.env.NODE_ENV === 'production' ? 'https://historio.herokuapp.com' : 'http://localhost:3000'}/api/Content/period1`)
+    const response = await fetch('https://historio-api.herokuapp.com/content/period1')
     const content = await response.json()
 
     return {
