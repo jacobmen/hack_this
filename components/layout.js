@@ -1,6 +1,5 @@
 import React from 'react'
 import { useRouter } from 'next/router'
-import { ServerStyleSheets } from '@material-ui/core'
 
 import {
     createMuiTheme,
