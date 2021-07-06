@@ -8,8 +8,8 @@ const config = {
     projectId: "historio-project",
     storageBucket: "historio-project.appspot.com",
     messagingSenderId: "693739184547",
-    appId: process.env.FIREBASE_APP_ID
-  };
+    appId: "1:693739184547:web:fe18de7046ee0f5e817a16"
+};
 
 if (!firebase.apps.length) {
     firebase.initializeApp(config)
