@@ -65,8 +65,10 @@ export default function PeriodPage(props) {
                         <Typography variant="h3" align="left" className={styles.title}>
                             {props.title}
                         </Typography>
+                        {signedIn &&
                         <Button variant="contained"
                                 onClick={handleEditButton}>{editing ? "Save and Stop Editing" : "Edit"}</Button>
+                        }
                         {sections.map((section, index) => (
                             <div className={styles.contentSection} key={index}>
                                 {editing &&

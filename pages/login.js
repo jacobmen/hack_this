@@ -39,7 +39,7 @@ export default function login(props) {
                             </FormControl>
                             <FormControl margin={"normal"} required>
                                 <InputLabel htmlFor="password">Password</InputLabel>
-                                <Input id="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+                                <Input id="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
                             </FormControl>
                             <Button type="submit">Submit</Button>
                             <Link href="./createaccount"><a>Create Account</a></Link>

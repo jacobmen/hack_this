@@ -47,11 +47,11 @@ export default function createAccount(props) {
                             </FormControl>
                             <FormControl margin={"normal"} required>
                                 <InputLabel htmlFor="password">Password</InputLabel>
-                                <Input id="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+                                <Input id="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
                             </FormControl>
                             <FormControl margin={"normal"} required>
                                 <InputLabel htmlFor="password">Confirm Password</InputLabel>
-                                <Input id="confirmPassword" value={confirmPassword}
+                                <Input id="confirmPassword" type="password" value={confirmPassword}
                                        onChange={(e) => setConfirmPassword(e.target.value)}/>
                             </FormControl>
                             <Button type="submit">Submit</Button>
