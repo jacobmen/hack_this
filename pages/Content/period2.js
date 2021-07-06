@@ -59,7 +59,7 @@ export default function Period2({ content }) {
 }
 
 export async function getStaticProps() {
-    const response = await fetch('https://historio-api.herokuapp.com/content/period2')
+    const response = await fetch(`${process.env.API_URL}/content/period2`)
     const content = await response.json()
 
     return {
